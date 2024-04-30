@@ -1,0 +1,17 @@
+{
+"bookBuddy":"Amigo del libro",
+"anTandemloopCompany":"una empresa de bucle tándem",
+"userName":"Nombre de usuario",
+"password":"Contraseña",
+"signIn":"Iniciar sesión",
+"alreadyHaveAnAccount":"¿Ya tienes una cuenta?",
+"login":"Acceso",
+"finalUser":"Hola, ",
+"search":"Sbuscar",
+"noResultsFound":"No se han encontrado resultados",
+"language":"Española",
+"languageKey":"Spanish",
+"by":"por ",
+"stock":"existencias ",
+"dark":"Modo oscuro"
+}
