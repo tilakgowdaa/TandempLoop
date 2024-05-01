@@ -13,5 +13,6 @@
 "languageKey":"Spanish",
 "by":"por ",
 "stock":"existencias ",
-"dark":"Modo oscuro"
+"dark":"Modo oscuro",
+"signOut":"desconectar"
 }

@@ -2,6 +2,7 @@ import 'package:book_buddy/constants/language.dart';
 import 'package:book_buddy/constants/language_constant.dart';
 import 'package:book_buddy/main.dart';
 import 'package:book_buddy/pages/home.dart';
+import 'package:book_buddy/pages/signin.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -175,6 +176,28 @@ class _MyProfileState extends State<MyProfile> {
                     onChanged: (value) => notifier.changeTheme()),
               );
             }),
+          ),
+          CircleAvatar(
+              radius: 34,
+              backgroundColor: Theme.of(context).primaryColor,
+              child: IconButton(
+                onPressed: () async {
+                  final SharedPreferences sharedPreferences =
+                      await SharedPreferences.getInstance();
+                  sharedPreferences.remove('user');
+                  sharedPreferences.remove('password');
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MySignIn()));
+                },
+                icon: const Icon(Icons.logout_rounded),
+                color: const Color.fromARGB(255, 10, 10, 10),
+                iconSize: 50,
+              )),
+          Text(
+            translation(context).signOut,
+            style: Theme.of(context).copyWith().textTheme.headlineMedium,
           )
         ],
       )),
