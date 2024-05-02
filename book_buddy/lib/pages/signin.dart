@@ -3,15 +3,11 @@ import 'package:book_buddy/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class MySignIn extends StatefulWidget {
-  const MySignIn({super.key});
+class MySignIn extends StatelessWidget {
+   MySignIn({super.key});
 
-  @override
-  State<MySignIn> createState() => _MySignInState();
-}
-
-class _MySignInState extends State<MySignIn> {
   final TextEditingController userController = TextEditingController();
+  
   final TextEditingController passwordController = TextEditingController();
 
   @override
